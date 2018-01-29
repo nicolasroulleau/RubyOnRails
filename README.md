@@ -1,19 +1,21 @@
 # RUBY ON RAILS POUR LES NULS :stuck_out_tongue:
 Description des concepts essentiels pour Ruby on Rails
 
-* [Site statique / Site dynamique]
-* [Model View Controller (MVC)]
-* [Les routes]
-* [Bases de Données]
-* [GET / POST]
-* [Concept de migration]
-* [Les relations entre les models des BDD]
-* [CRUD]
+### Table des Matières
 
-### Site statique / Site dynamique
-Un **_site web statique_** est une page dont le contenu ne varie pas en fonction de l'internaute et des caractéristiques de sa demande. Le lien renverra toujours **_le même contenu_** quelque soit l'utilisateur ou le nombre de visites. Exemple de site statique: http://motherfuckingwebsite.com/).
+1. [La différence entre un site statique et un site dynamique](#stadyn)
+2. [Le MVC: Model View Controller](#mvc)
+3. [Les routes](#routes)
+4. [Les Bases de Données](#bdd)
+5. [GET / POST](#getpost)
+6. [Le concept de migration](#migrate)
+7. [Les relations entre les models des BDD](#models)
+8. [Les fonctions du CRUD](#crud)
 
-A l'inverse, une **_page web dynamique_** est générée à la demande et son contenu **_varie_** en fonction des caractéristiques de la demande (heure, adresse IP de l'ordinateur du demandeur, formulaire rempli par le demandeur, etc..). L'URL d'une page peut donc renvoyer un affichage différent selon l'internaute. (ex: mon fil d'actualités Facebook vs. celui de mon voisin).
+### <a name="stadyn"></a>La différence entre un site statique et un site dynamique
+Un **_site web statique_** est une page dont le contenu ne varie pas en fonction de l'internaute et des caractéristiques de sa demande. Le lien renverra toujours **_le même contenu_** quelque soit l'utilisateur ou le nombre de visites. Exemple de site statique: http://motherfuckingwebsite.com/.
+
+A l'inverse, une **_page web dynamique_** est générée à la demande et **_son contenu varie_** en fonction des caractéristiques de la demande (heure, adresse IP de l'ordinateur du demandeur, formulaire rempli par le demandeur, etc..). L'URL d'une page peut donc renvoyer un affichage différent selon l'internaute. (ex: mon fil d'actualités Facebook vs. celui de mon voisin).
 
 ![Schéma site statique et dynamique](http://www.linformatique.org/creation-web-opter-site-statique-dynamique.html)
 
@@ -21,7 +23,7 @@ D'après ces deux définitions, on peut déduire que la différence majeure entr
 
 Attention: cela ne signifie pas qu'un site statique ne peut pas contenir d'animations (GIF, vidéos, musiques). Il le peut mais ces animations resteront les mêmes pour tous les visiteurs du site.
 
-### Model View Controller (MVC)
+### <a name="mvc"></a>Le MVC: Model View Controller
 Le modèle-vue-contrôleur est une architecture composée de trois modules ayant chacun un rôle spécifique :
 * Un modèle (Model) contient les fichiers permettant d'aller récupérer les données à afficher dans la BDD ;
 * Une vue (View) contient le code HTML qui détermine l'interface graphique et la présentation des données à l'utilisateur ;
@@ -40,7 +42,7 @@ C'est ici que se trouve le code HTML de votre site web. C'est donc cette partie 
 ##### Controller
 Lorsqu'un utilisateur se trouve face à son navigateur, il adresse ses requêtes au Controller. Chaque requête renvoie vers une action (fonction) dans le Controller. Chaque action va ensuite transmettre une requête vers le Model. Après réponse du Model, les données vont être envoyées vers le View pour la mise en forme. Pour chaque action du Controller il existera donc un fichier View qui contiendra le code HTML correspondant.
 
-### Les routes
+### <a name="routes"></a>Les routes
 Les routes permettent d’**interpréter les URL** et d’**orienter vers les bonnes actions le controller**. On peut les configurer dans le fichier config/routes.rb.
 
 Les routes d'un site sont représentées dans l'URL avec des '/' comme pour les chemins en terminal.
@@ -53,14 +55,14 @@ Le principe des routes pour Rails consiste à rediriger un utilisateur vers l'ac
 
 Pour plus d'informations vous pouvez lire la doc rails sur les [routes](http://guides.rubyonrails.org/routing.html).
 
-### Bases de Données (BDD)
+### <a name="bdd"></a>Les Bases de Données
 Une base de données permet de stocker et de retrouver l'intégralité des données brutes ou d'informations en rapport avec un thème ou une activité. Ex: Amazon contient une énorme BDD qui contient les infos de chaque utilisateurs (noms, prénoms, ville, moyen de paiement, etc.), les infos des articles à vendre (nom, prix, descriptif, etc.), etc.
 
 Plus basiquement, une BDD ressemble à un fichier excel (.xlsx) dans lequel un Id est par exemple relié à un string. Cette base de données est le modèle qui est utilisé pour les sites web dynamiques.
 
 Rails permet de créer plusieurs fichiers qui peuvent nous montrer l'état des lieux des bases de données grâce à la commande `rails db:migrate`.
 
-### GET / POST
+### <a name="getpost"></a>GET / POST
 
 ##### GET
 Sert à appeler la méthode du Controller lié à l'URL rentrée par l'utilisateur.
@@ -77,7 +79,7 @@ Sert à soumettre un formulaire.
 
 Ex: un site web affiche toutes les marques de bières dans le monde. Si on souhaite ajouter une nouvelle marque on passera par la méthode POST qui elle même renvoie vers une méthode Create dans le Controller.
 
-### Le concept de migration
+### <a name="migrate"></a>Le concept de migration
 Les migrations permettent de **_faire évoluer la structure de la base de données_**. C'est une **simplification du language** pour rendre les modifications plus faciles et plus rapides.
 
 La commande de base utilisée dans Rails est *db:migrate*.
@@ -86,7 +88,7 @@ Pour en savoir plus, vous pouvez regarder le tuto de Graphikart :
 
 [![Apprendre Ruby on Rails : Les Migrations](https://img.youtube.com/vi/LBtCqTeJvfg/0.jpg)](https://www.youtube.com/watch?v=LBtCqTeJvfg)
 
-### Les relations entre les models des BDD
+### <a name="models"></a>Les relations entre les models des BDD
 [Wikipedia][1] définit le modèle relationnel comme *"une manière de modéliser les relations existantes entre plusieurs informations, et de les ordonner entre elles."*
 
 ![Diagramme de base de données](http://www.itheis.com/moderniser-db2/modelisation-des-bases-de-donnees-db2-sur-ibm-i/)
@@ -107,7 +109,7 @@ Les modèles de bases de données les plus courants sont:
 
 Vous pouvez consulter ce [**site**](https://www.lucidchart.com/pages/fr/quest-ce-quun-mod%C3%A8le-de-base-de-donn%C3%A9es) pour en savoir plus sur chacun de ces modèles.
 
-### CRUD
+### <a name="crud"></a>Les fonctions du CRUD
 CRUD est un acronyme informatique anglais qui correspond à 4 fonctions nécessaires pour manipuler une base de données: "Create-Read-Update-Destroy". Il est intéressant de relier ces opérations à des méthodes HTTP. Le GET et le POST par exemple sont des méthodes HTTP qui correspondent respectivement aux opérations READ et CREATE. Pour les opérations Update et Destroy, les méthodes HTTP correspondantes sont PUT et DELETE.
 
 Voici la synthèse des fonctions en tableau :
