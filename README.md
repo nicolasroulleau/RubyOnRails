@@ -89,7 +89,7 @@ Pour en savoir plus, vous pouvez regarder le tuto de Graphikart :
 [![Apprendre Ruby on Rails : Les Migrations](https://img.youtube.com/vi/LBtCqTeJvfg/0.jpg)](https://www.youtube.com/watch?v=LBtCqTeJvfg)
 
 ### <a name="models"></a>Les relations entre les models des BDD
-[Wikipedia][1] définit le modèle relationnel comme *"une manière de modéliser les relations existantes entre plusieurs informations, et de les ordonner entre elles."*
+[**Wikipedia**](https://fr.wikipedia.org/wiki/Mod%C3%A8le_relationnel) définit le modèle relationnel comme *"une manière de modéliser les relations existantes entre plusieurs informations, et de les ordonner entre elles."*
 
 ![Diagramme de base de données](https://www.memoireonline.com/02/12/5302/Conception-et-implementation-d-une-base-de-donnees-dynamique-et-partagee-de-gestion-clinique6.png)
 
