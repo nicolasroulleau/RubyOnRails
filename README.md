@@ -29,7 +29,7 @@ Le modèle-vue-contrôleur est une architecture composée de trois modules ayant
 * Une vue (View) contient le code HTML qui détermine l'interface graphique et la présentation des données à l'utilisateur ;
 * Un contrôleur (Controller) contient le code logique faisant la passerelle entre le modèle, la vue et les actions de l'utilisateur.
 
-![Schéma du MVC](https://www.pinterest.com/pin/159877855501560132/)
+![Schéma du MVC](https://i.pinimg.com/564x/f1/45/fa/f145fa01dd8cadd28537194de00cda59.jpg)
 
 On retrouve cette structure dans chaque application Rails, dans un dossier app/, où nous allons retrouver des sous-dossiers models, views, controllers.
 
@@ -91,7 +91,7 @@ Pour en savoir plus, vous pouvez regarder le tuto de Graphikart :
 ### <a name="models"></a>Les relations entre les models des BDD
 [Wikipedia][1] définit le modèle relationnel comme *"une manière de modéliser les relations existantes entre plusieurs informations, et de les ordonner entre elles."*
 
-![Diagramme de base de données](http://www.itheis.com/moderniser-db2/modelisation-des-bases-de-donnees-db2-sur-ibm-i/)
+![Diagramme de base de données](http://www.itheis.com/wp-content/uploads/2015/11/Mod%C3%A8le-Relationnel-Base-de-Donn%C3%A9es-DB2-for-i.png/)
 
 Un modèle de bases de données définit entre autres **la structure logique** de cette base de données. Il existe beaucoup de modèles de bases de données différentes, mais comme pour les langages de programmation, certains sont plus utilisés que d'autres.
 
