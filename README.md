@@ -1,4 +1,4 @@
-# RUBY ON RAILS POUR LES NULS :stuck_out_tongue:
+# RUBY ON RAILS POUR LES NULS :stuck_out_tongue: :stuck_out_tongue: :stuck_out_tongue: 
 Description des concepts essentiels pour Ruby on Rails
 
 ### Table des Matières
@@ -125,6 +125,6 @@ Pour en savoir plus, vous pouvez regarder [cette vidéo](https://www.grafikart.f
 
 ___
 
-Bravo si vous êtes arrivés au bout de ce README :clap:
+Bravo, vous êtes arrivés au bout de ce README :clap: :clap: :clap:
 
 
