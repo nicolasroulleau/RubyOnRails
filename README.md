@@ -17,7 +17,7 @@ Un **_site web statique_** est une page dont le contenu ne varie pas en fonction
 
 A l'inverse, une **_page web dynamique_** est générée à la demande et **_son contenu varie_** en fonction des caractéristiques de la demande (heure, adresse IP de l'ordinateur du demandeur, formulaire rempli par le demandeur, etc..). L'URL d'une page peut donc renvoyer un affichage différent selon l'internaute. (ex: mon fil d'actualités Facebook vs. celui de mon voisin).
 
-![Schéma site statique et dynamique](http://www.linformatique.org/creation-web-opter-site-statique-dynamique.html)
+![Schéma site statique et dynamique](http://www.linformatique.org/wp-content/uploads/2014/07/creation-web-opter-site-statique-dynamique.jpg?x93808)
 
 D'après ces deux définitions, on peut déduire que la différence majeure entre un site statique et un site dynamique est le fait que le **premier affiche toujours le même contenu** et le **second varie en fonction de la demande**.
 
