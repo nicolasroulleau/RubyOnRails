@@ -13,7 +13,7 @@ Description des concepts essentiels pour Ruby on Rails
 8. [Les fonctions du CRUD](#crud)
 
 ### <a name="stadyn"></a>La différence entre un site statique et un site dynamique
-Un **_site web statique_** est une page dont le contenu ne varie pas en fonction de l'internaute et des caractéristiques de sa demande. Le lien renverra toujours **_le même contenu_** quelque soit l'utilisateur ou le nombre de visites. Exemple de site statique: http://motherfuckingwebsite.com/.
+Un **_site web statique_** est une page dont le contenu ne varie pas en fonction de l'internaute et des caractéristiques de sa demande. Le lien renverra toujours **_le même contenu_** quelque soit l'utilisateur ou le nombre de visites. Voici un [**exemple**](http://motherfuckingwebsite.com/) de site statique.
 
 A l'inverse, une **_page web dynamique_** est générée à la demande et **_son contenu varie_** en fonction des caractéristiques de la demande (heure, adresse IP de l'ordinateur du demandeur, formulaire rempli par le demandeur, etc..). L'URL d'une page peut donc renvoyer un affichage différent selon l'internaute. (ex: mon fil d'actualités Facebook vs. celui de mon voisin).
 
@@ -91,7 +91,7 @@ Pour en savoir plus, vous pouvez regarder le tuto de Graphikart :
 ### <a name="models"></a>Les relations entre les models des BDD
 [Wikipedia][1] définit le modèle relationnel comme *"une manière de modéliser les relations existantes entre plusieurs informations, et de les ordonner entre elles."*
 
-![Diagramme de base de données](http://www.itheis.com/wp-content/uploads/2015/11/Mod%C3%A8le-Relationnel-Base-de-Donn%C3%A9es-DB2-for-i.png/)
+![Diagramme de base de données](https://www.memoireonline.com/02/12/5302/Conception-et-implementation-d-une-base-de-donnees-dynamique-et-partagee-de-gestion-clinique6.png)
 
 Un modèle de bases de données définit entre autres **la structure logique** de cette base de données. Il existe beaucoup de modèles de bases de données différentes, mais comme pour les langages de programmation, certains sont plus utilisés que d'autres.
 
